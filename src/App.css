@@ -1,0 +1,152 @@
+#root {
+  color: black;
+  background-color: rgb(235, 208, 208);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  opacity: 80%;
+}
+
+@media screen and (min-width: 700px) {
+  .main {
+    grid-template-columns: min-content 3fr;
+  }
+}
+
+.card {
+  display: grid;
+}
+
+@media screen and (min-width: 700px) {
+  .card--info {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, min-content);
+    align-items: start;
+  }
+}
+
+.header {
+  padding: 1em 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 2.3rem;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  opacity: .9;
+}
+
+.link {
+  margin-bottom: .5em;
+}
+
+.text {
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.icon {
+  margin-right: 1em;
+}
+
+footer {
+  font-size: 1.5em;
+  opacity: .9;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  display: inline;
+}
+
+.slider-container {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-images {
+  max-width: 100%;
+  /*border: 1px solid #eee;   Aspecto*/
+  overflow: hidden;
+}
+
+.dots-container {
+  bottom: 8.8%;
+  display: flex;
+  justify-content: center;
+}
+
+.dot-container-item {
+  margin: 0 .6%;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+
+.leftArrow {
+  position: relative;
+  left: 2%;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightArrow {
+  position: relative;
+  right: -98%;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  z-index: 1;
+  cursor: pointer;
+}
+
+div.active {
+  background: #ccc;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+/*.img-about-container {
+  background-color: rgb(85, 144, 146);
+}*/
+
+.img-about {
+  width: 100%;
+}
+
+.img-photo {
+  width: 100%;
+}
+
+.img-skills {
+  width: 100%;
+}
